@@ -119,6 +119,7 @@ describe('TestSuite-UI', () => {
             inventoryPage.aboutBtnClick();
 
             cy.url().should('eq', about_url, 'Verify the About url');
+            cy.visit(login_url);
 
         });
 
@@ -128,10 +129,7 @@ describe('TestSuite-UI', () => {
 
         beforeEach(function () {
             cy.visit(login_url);
-            cy.wait(5000) // wait for 5 seconds
             cy.loginSauceDemo(this.credentials.standarUser, this.credentials.systemPss);
-
-            cy.wait(5000) // wait for 5 seconds
             cy.url().should('eq', inventory_url, 'Verify the inventory url');
         });
 
