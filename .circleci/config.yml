@@ -35,15 +35,15 @@ workflows:
        #     store_artifacts: true 
        #     executor: with-chrome
         
-       # - cypress/run:
-       #     post-install:
-       #     - run: npm install -g browserstack-cypress-cli
-       #     name: suiteUI-cypress-dashboard
-       #     command: npm run cy:UI:chrome:dash
-       #     record: true 
-       #     browser: chrome             
-       #     store_artifacts: true 
-       #     executor: with-chrome
+        - cypress/run:
+            post-install:
+            - run: npm install -g browserstack-cypress-cli
+            name: suiteUI-cypress-dashboard
+            command: npm run cy:UI:chrome:dash
+            record: true 
+            browser: chrome             
+            store_artifacts: true 
+            executor: with-chrome
             
         - cypress/run:
             post-install:
