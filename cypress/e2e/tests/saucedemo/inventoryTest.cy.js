@@ -129,6 +129,8 @@ describe('TestSuite-UI', () => {
         beforeEach(function () {
             cy.visit(login_url);
             cy.loginSauceDemo(this.credentials.standarUser, this.credentials.systemPss);
+
+            cy.wait(5000) // wait for 5 seconds
             cy.url().should('eq', inventory_url, 'Verify the inventory url');
         });
 
