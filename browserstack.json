@@ -1,0 +1,36 @@
+{
+    "auth": {
+        "username": "marcelalopez_6Jj4Ip",
+        "access_key": "zusfL5ycq6NzpjaMetsA"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest"
+            ]
+        },
+        {
+            "browser": "edge",
+            "os": "Windows 10",
+            "versions": [
+                "latest"
+            ]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "cypress.config.js",
+        "cypress_version": "10.latest",
+        "project_name": "Automation-Trainee",
+        "build_name": "Cypress Automation Trainee",
+        "parallels": 2,
+        "cache_dependencies": "false",
+        "npm_dependencies": {
+            "ajv": "8.11.0",
+            "cypress": "10.9.0",
+            "cypress-mochawesome-reporter": "3.2.3"
+        }
+    },
+    "disable_usage_reporting": false
+}

@@ -8,15 +8,20 @@
     "cy:open": "cypress open",
     "cy:chrome": "cypress run --browser chrome",
     "cy:edge": "cypress run --browser edge",
-    "cy:suitAPI:chrome": "cypress run --headed --browser chrome --spec cypress/e2e/tests/api",
-    "cy:suitUI:chrome": "cypress run --headed --browser chrome --spec cypress/e2e/tests/saucedemo",
-    "cy:suitAPI:edge": "cypress run --headed --browser edge --spec cypress/e2e/tests/api",
-    "cy:suitUI:edge": "cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo",
-    
-    "cy:suitUI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
-    "cy:suitAPI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
-    "cy:suitUI:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
-    "cy:suitAPI:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d"
+
+    "cy:API:chrome": "cypress run --headed --browser chrome --spec cypress/e2e/tests/api",
+    "cy:UI:chrome": "cypress run --headed --browser chrome --spec cypress/e2e/tests/saucedemo",
+    "cy:API:edge": "cypress run --headed --browser edge --spec cypress/e2e/tests/api",
+    "cy:UI:edge": "cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo",
+
+    "cy:UI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
+    "cy:API:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
+    "cy:UI:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
+    "cy:API:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
+
+    "cy:UI:browserstack" : "browserstack-cypress run --sync --spec cypress/e2e/tests/saucedemo",
+    "cy:API:browserstack" : "browserstack-cypress run --sync --spec cypress/e2e/tests/api"
+
   },
   "keywords": [
     "e2e",

@@ -2,3 +2,5 @@
 cypress/videos/
 cypress/report/
 cypress/screenshots/
+cypress/log/
+cypress/results/
