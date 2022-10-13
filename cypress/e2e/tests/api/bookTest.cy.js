@@ -17,7 +17,7 @@ describe('API TESTING - Second Section', () => {
     // NOTE: It is skip because it consumes a lot of time 
     // because it iterates all the objects of the response
     */
-    it('Get books - Schema validation', () => {
+    it.skip('Get books - Schema validation', () => {
 
         // API resource for the request
         let resource = 'api/v1/Books';
