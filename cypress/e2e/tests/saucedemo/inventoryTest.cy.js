@@ -119,6 +119,8 @@ describe('TestSuite-UI', () => {
             inventoryPage.aboutBtnClick();
 
             cy.url().should('eq', about_url, 'Verify the About url');
+
+            //This was add to solve a issue 
             cy.visit(login_url);
 
         });
@@ -136,11 +138,15 @@ describe('TestSuite-UI', () => {
         it('Verify twitter', function () {
             inventoryPage.twIconClick();
             cy.url().should('include', 'twitter.com/saucelabs');
+            //This was add to solve a issue 
+            cy.visit(login_url);
         });
 
         it('Verify facebook', function () {
             inventoryPage.fbIconClick();
             cy.url().should('include', 'facebook.com/saucelabs');
+            //This was add to solve a issue 
+            cy.visit(login_url);
         });
 
         it('Verify linkedin', function () {
