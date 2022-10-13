@@ -15,7 +15,10 @@
     "cy:suitUI:edge": "cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo",
 
     "cy:suitUI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
-    "cy:suitAPI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d"
+    "cy:suitAPI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
+    "cy:suitUI:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
+    "cy:suitAPI:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d"
+
   },
   "keywords": [
     "e2e",
