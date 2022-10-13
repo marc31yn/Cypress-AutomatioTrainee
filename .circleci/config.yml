@@ -2,25 +2,57 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+orbs:
+  cypress: cypress-io/cypress@2.2.0
+  node: circleci/node@5.0.2
+  
+executors:
+  with-chrome:
     docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
-      - checkout
-      - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+      - image: 'cypress/browsers:node14.16.0-chrome90-ff88'  
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+# Create jobs via workflows
 workflows:
-  say-hello-workflow:
-    jobs:
-      - say-hello
+    practice-workflow:
+      jobs:
+        - cypress/run:
+            post-install:
+            - run: npm install -g browserstack-cypress-cli
+            name: suiteUI-cypress-browserstack
+            command: npm run cy:UI:browserstack
+            record: true 
+            browser: chrome             
+            store_artifacts: true 
+            executor: with-chrome 
+      
+        - cypress/run:
+            post-install:
+            - run: npm install -g browserstack-cypress-cli
+            name: suiteAPI-cypress-browserstack
+            command: npm run cy:API:browserstack
+            record: true 
+            browser: chrome             
+            store_artifacts: true 
+            executor: with-chrome
+        
+        - cypress/run:
+            post-install:
+            - run: npm install -g browserstack-cypress-cli
+            name: suiteUI-cypress-dashboard
+            command: npm run cy:UI:chrome:dash
+            record: true 
+            browser: chrome             
+            store_artifacts: true 
+            executor: with-chrome
+            
+        - cypress/run:
+            post-install:
+            - run: npm install -g browserstack-cypress-cli
+            name: suiteAPI-cypress-dashboard
+            command: npm run cy:API:chrome:dash
+            record: true 
+            browser: chrome             
+            store_artifacts: true 
+            executor: with-chrome    
+         
+         
