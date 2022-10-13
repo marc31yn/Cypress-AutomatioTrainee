@@ -15,7 +15,7 @@ The objective of this project is to be able to demonstrate the skills acquired i
 <p align="right">
   <a>
   <img src="https://yt3.ggpht.com/iD0oePTGV8tZwEEP_WEG2rvyNiQAVfmjhawFMCj17ARjjmw-J70k9NDjSE5QTzD9Vk3ayBU=s88-c-k-c0x00ffffff-no-rj" width="50"/>
-    <img src="https://skillicons.dev/icons?i=js,nodejs,visualstudio,git,github" />
+    <img src="https://skillicons.dev/icons?i=js,nodejs,git,github" />
     <img src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_circleci_icon_158961.png" width="50"/>
   </a>
 </p>
