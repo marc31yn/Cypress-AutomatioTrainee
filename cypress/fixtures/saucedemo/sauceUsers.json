@@ -1,0 +1,18 @@
+[
+    {
+        "test_name": "Log in with right credentials",
+        "name": "Standard_user",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expected_url": "https://www.saucedemo.com/inventory.html",
+        "error_message": ""
+    },
+    {
+        "test_name": "Log in with wrong credentials",
+        "name": "Wrong_user",
+        "username": "test-username",
+        "password": "test-password",
+        "expected_url": "https://www.saucedemo.com/",
+        "error_message": "Epic sadface"
+    }
+]

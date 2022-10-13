@@ -1,0 +1,24 @@
+{
+  "name": "cy_research",
+  "version": "1.0.0",
+  "description": "This is a research of cypress, also this project will be used to give demo of cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "e2e",
+    "automation",
+    "framework",
+    "cypress",
+    "circle",
+    "browserstack"
+  ],
+  "author": "Marcela Lopez",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^8.11.0",
+    "cypress": "^10.10.0"
+  }
+}
