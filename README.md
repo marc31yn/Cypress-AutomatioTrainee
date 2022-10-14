@@ -1,5 +1,7 @@
 # Cypress Research
 
+[![Automatio_Trainee](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/8fcew8&style=social&logo=cypress)](https://dashboard.cypress.io/projects/8fcew8/runs)
+
 This is cypress research assigned by the trainee program of QA Automation.
 
 The objective of this project is to be able to demonstrate the skills acquired in test automation, using the following tools:
@@ -41,6 +43,8 @@ The objective of this project is to be able to demonstrate the skills acquired i
 <strong><g-emoji class="g-emoji" alias="bulb" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png">💡</g-emoji> For more information:</strong> go to [Cypress webpage](https://docs.cypress.io/guides/getting-started/installing-cypress#What-you-ll-learn)
 
 ![image](https://user-images.githubusercontent.com/23398107/195535737-e7c6d2d6-1270-426f-9ba5-5795655fb188.png)
+
+
 
 
 
