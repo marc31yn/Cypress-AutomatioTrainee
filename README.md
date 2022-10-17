@@ -22,22 +22,22 @@ The objective of this project is to be able to demonstrate the skills acquired i
   </a>
 </p>
 
-<h2><span class="emoji">💻</span> Cypress Installation and setup </h2>
+<h2><span class="emoji">💻</span> Installing Cypress </h2>
 
 1. Create folder where the project will be
 2. Go to the your folder
 > cd /your/project/path
-4. Create your package.json file
+3. Create your package.json file
 > npm init
-5. Install Cypress via npm:
+4. Install Cypress via npm:
 > npm install cypress --save-dev
-6. In package.json add the following in scripts:
+5. In package.json add the following in scripts:
 >{
   "scripts": {
     "cypress:open": "cypress open"
   }
 }
-7. Execute the following to open Cypress
+6. Execute the following to open Cypress
 >npm run cypress:open 
 
 <strong><g-emoji class="g-emoji" alias="bulb" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png">💡</g-emoji> For more information:</strong> go to [Cypress webpage](https://docs.cypress.io/guides/getting-started/installing-cypress#What-you-ll-learn)
