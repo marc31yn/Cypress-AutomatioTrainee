@@ -45,6 +45,47 @@ The objective of this project is to be able to demonstrate the skills acquired i
 ![image](https://user-images.githubusercontent.com/23398107/195535737-e7c6d2d6-1270-426f-9ba5-5795655fb188.png)
 
 
+<h2><span class="emoji">💻</span> Installing Browserstack </h2>
 
+To run your first Cypress test with BrowserStack, perform the following steps:
+
+1. Install the BrowserStack CLI
+> npm install -g browserstack-cypress-cli
+
+2. Create and configure the browserstack.json file which contains configurations
+> browserstack-cypress init
+
+3. After the browserstack.json file is created, modify or add the mandatory configurations that are required to run the Cypress test as shown in the following sample code.
+
+```bash
+  // browserstack.json
+
+{
+  "auth": {
+    "username": <ENTER USERNAME>,
+    "access_key": <ENTER ACCESS KEY>
+  },
+  "browsers": [{
+      "browser": "chrome",
+      "os": "Windows 10",
+      "versions": ["latest", "latest - 1"]
+    },
+    {
+      "browser": "edge",
+      "os": "Windows 10",
+      "versions": ["latest"]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "./cypress.config.js",
+    "cypress_version": "10",
+    "project_name": "Cypress Example",
+    "build_name": "Build no: 1",
+}
+```
+4. Run the test using the following command:
+> browserstack-cypress run
+
+![image](https://user-images.githubusercontent.com/23398107/196533432-2702392f-4dae-4847-9a42-420b73ebce55.png)
 
 
