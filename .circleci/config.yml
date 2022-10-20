@@ -10,11 +10,27 @@ executors:
   with-chrome:
     docker:
       - image: 'cypress/browsers:node14.16.0-chrome90-ff88'  
-
+      
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+commands:
+  report-coverage:
+    description: |
+      Store coverage report as an artifact and send it to Codecov service.
+    steps:
+      - store_artifacts:
+          path: coverage
+      - run: npx nyc report --reporter=text || true
+      - codecov/upload:
+          file: coverage/coverage-final.json
+          
 # Create jobs via workflows
 workflows:
+  build:
     cypress-workflow:
       jobs:
+      - cypress/install:
+          build: 'npm run build'
+      
        # - cypress/run:
        #     post-install:
        #     - run: npm install -g browserstack-cypress-cli
@@ -40,17 +56,15 @@ workflows:
             - run: npm install -g browserstack-cypress-cli
             name: suiteUI-cypress-dashboard
             command: npm run cy:UI:chrome:dash
-            - store_test_results:
-                path: reports
             record: true 
             browser: chrome             
             store_artifacts: true 
             executor: with-chrome
+            post-steps:
+            - report-coverage
             
             
         - cypress/run:
-            - store_test_results:
-                path: reports
             post-install:
             - run: npm install -g browserstack-cypress-cli
             name: suiteAPI-cypress-dashboard
@@ -59,6 +73,8 @@ workflows:
             browser: chrome             
             store_artifacts: true 
             executor: with-chrome
+            post-steps:
+            - report-coverage
             
          
          
