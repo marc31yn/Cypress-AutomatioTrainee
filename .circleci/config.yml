@@ -14,11 +14,8 @@ executors:
           
 # Create jobs via workflows
 workflows:
-  build:
     cypress-workflow:
       jobs:
-      - cypress/install:
-          build: 'npm run build'
       
        # - cypress/run:
        #     post-install:
