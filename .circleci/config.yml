@@ -49,7 +49,7 @@ workflows:
             executor: with-chrome
             post-steps:
             - store_test_results:
-                path: cypress/report
+                path: results
             
             
         - cypress/run:
