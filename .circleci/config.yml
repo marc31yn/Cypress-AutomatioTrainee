@@ -49,7 +49,7 @@ workflows:
             executor: with-chrome
             post-steps:
             - store_test_results:
-                path: results
+                path: mochawesome-report
             
             
         - cypress/run:
