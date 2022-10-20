@@ -43,10 +43,7 @@ workflows:
             - run: npm i --save-dev cypress-mochawesome-reporter
             name: suiteUI-cypress-dashboard
             command: npm run cy:UI:chrome:dash
-            record: true
-            parallel: true # split all specs across machines
-            parallelism: 2 
-            group: 'ui tests'
+            record: true 
             browser: chrome             
             store_artifacts: true 
             executor: with-chrome
@@ -61,10 +58,7 @@ workflows:
             - run: npm i --save-dev cypress-mochawesome-reporter
             name: suiteAPI-cypress-dashboard
             command: npm run cy:API:chrome:dash
-            record: true
-            parallel: true # split all specs across machines
-            parallelism: 2 
-            group: 'api tests' 
+            record: true 
             browser: chrome             
             store_artifacts: true 
             executor: with-chrome
