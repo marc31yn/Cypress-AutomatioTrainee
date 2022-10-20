@@ -2,6 +2,9 @@
 
 [![Automatio_Trainee](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/8fcew8&style=social&logo=cypress)](https://dashboard.cypress.io/projects/8fcew8/runs)
 
+**Circle CI status:**
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/marc31yn/Cypress-AutomatioTrainee/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/marc31yn/Cypress-AutomatioTrainee/tree/master)
+
 This is cypress research assigned by the trainee program of QA Automation.
 
 The objective of this project is to be able to demonstrate the skills acquired in test automation, using the following tools:
