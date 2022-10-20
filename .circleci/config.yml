@@ -43,7 +43,9 @@ workflows:
             record: true 
             browser: chrome             
             store_artifacts: true 
-            executor: with-chrome           
+            executor: with-chrome
+            - store_test_results:
+                path: reports
             
         - cypress/run:
             post-install:
@@ -54,5 +56,7 @@ workflows:
             browser: chrome             
             store_artifacts: true 
             executor: with-chrome
+            - store_test_results:
+                path: reports
          
          
