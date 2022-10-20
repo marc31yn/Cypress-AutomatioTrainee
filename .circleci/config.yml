@@ -49,13 +49,13 @@ workflows:
             executor: with-chrome
             post-steps:
             - store_test_results:
-                path: cypress/results
+                path: cypress/report
             
             
         - cypress/run:
             post-install:
             - run: npm install -g browserstack-cypress-cli
-            - run: npm i --save-dev cypress-mochawesome-reporters
+            - run: npm i --save-dev cypress-mochawesome-reporter
             name: suiteAPI-cypress-dashboard
             command: npm run cy:API:chrome:dash
             record: true 
@@ -64,7 +64,7 @@ workflows:
             executor: with-chrome
             post-steps:
             - store_test_results:
-                path: cypress/results
+                path: cypress/report
             
          
          
