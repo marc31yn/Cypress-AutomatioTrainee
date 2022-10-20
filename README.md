@@ -89,6 +89,7 @@ To run your first Cypress test with BrowserStack, perform the following steps:
 4. Run the test using the following command:
 > browserstack-cypress run
 
+<strong><g-emoji class="g-emoji" alias="bulb" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png">💡</g-emoji> For more information:</strong> go to [Circle webpage](https://circleci.com/developer/orbs/orb/cypress-io/cypress)
 ![image](https://user-images.githubusercontent.com/23398107/196533432-2702392f-4dae-4847-9a42-420b73ebce55.png)
 
 
