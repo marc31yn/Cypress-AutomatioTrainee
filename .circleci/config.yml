@@ -48,7 +48,7 @@ workflows:
             executor: with-chrome
             post-steps:
             - store_test_results:
-                path: cypress/results
+                path: results
             
             
         - cypress/run:
@@ -62,7 +62,7 @@ workflows:
             executor: with-chrome
             post-steps:
             - store_test_results:
-                path: cypress/results
+                path: results
             
          
          
