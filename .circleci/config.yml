@@ -17,25 +17,25 @@ workflows:
     cypress-workflow:
       jobs:
       
-       # - cypress/run:
-       #     post-install:
-       #     - run: npm install -g browserstack-cypress-cli
-       #     name: suiteUI-cypress-browserstack
-       #     command: npm run cy:UI:browserstack
-       #     record: true 
-       #     browser: chrome             
-       #     store_artifacts: true 
-       #     executor: with-chrome 
+        - cypress/run:
+            post-install:
+            - run: npm install -g browserstack-cypress-cli
+            name: suiteUI-cypress-browserstack
+            command: npm run cy:UI:browserstack
+            record: true 
+            browser: chrome             
+            store_artifacts: true 
+            executor: with-chrome 
       
-       # - cypress/run:
-       #     post-install:
-       #     - run: npm install -g browserstack-cypress-cli
-       #     name: suiteAPI-cypress-browserstack
-       #     command: npm run cy:API:browserstack
-       #     record: true 
-       #     browser: chrome             
-       #     store_artifacts: true 
-       #     executor: with-chrome
+        - cypress/run:
+            post-install:
+            - run: npm install -g browserstack-cypress-cli
+            name: suiteAPI-cypress-browserstack
+            command: npm run cy:API:browserstack
+            record: true 
+            browser: chrome             
+            store_artifacts: true 
+            executor: with-chrome
         
         - cypress/run:            
             post-install:
