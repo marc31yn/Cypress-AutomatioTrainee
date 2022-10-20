@@ -44,6 +44,7 @@ workflows:
             name: suiteUI-cypress-dashboard
             command: npm run cy:UI:chrome:dash
             record: true 
+            group: 'ui tests'
             browser: chrome             
             store_artifacts: true 
             executor: with-chrome
@@ -58,7 +59,8 @@ workflows:
             - run: npm i --save-dev cypress-mochawesome-reporter
             name: suiteAPI-cypress-dashboard
             command: npm run cy:API:chrome:dash
-            record: true 
+            record: true
+            group: 'api tests' 
             browser: chrome             
             store_artifacts: true 
             executor: with-chrome
