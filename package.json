@@ -14,10 +14,10 @@
     "cy:API:edge": "cypress run --headed --browser edge --spec cypress/e2e/tests/api",
     "cy:UI:edge": "cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo",
 
-    "cy:UI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
-    "cy:API:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
-    "cy:UI:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
-    "cy:API:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/api --record --key f42a23f3-6492-474c-a914-17ef85d4ec7d",
+    "cy:UI:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/saucedemo --record --key a3f9ef92-08b5-469a-b482-9d21ec4c7c83",
+    "cy:API:chrome:dash": "npx cypress run --headed --browser chrome --spec cypress/e2e/tests/api --record --key a3f9ef92-08b5-469a-b482-9d21ec4c7c83",
+    "cy:UI:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/saucedemo --record --key a3f9ef92-08b5-469a-b482-9d21ec4c7c83",
+    "cy:API:edge:dash": "npx cypress run --headed --browser edge --spec cypress/e2e/tests/api --record --key a3f9ef92-08b5-469a-b482-9d21ec4c7c83",
 
     "cy:UI:browserstack" : "browserstack-cypress run --sync --spec cypress/e2e/tests/saucedemo",
     "cy:API:browserstack" : "browserstack-cypress run --sync --spec cypress/e2e/tests/api"
