@@ -1,6 +1,6 @@
 # Cypress Research
 
-[![Automatio_Trainee](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/8fcew8&style=social&logo=cypress)](https://dashboard.cypress.io/projects/8fcew8/runs)
+[![Cypress Automation](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/kf87xn/master&style=social&logo=cypress)](https://dashboard.cypress.io/projects/kf87xn/runs)
 
 **Circle CI status:**
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/marc31yn/Cypress-AutomatioTrainee/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/marc31yn/Cypress-AutomatioTrainee/tree/master)
